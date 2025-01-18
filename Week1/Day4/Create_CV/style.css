@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: aliceblue;
+    position: relative;
+}
+
+#h-1 {
+    font-size: 150%;
+    text-transform: uppercase;
+    position: absolute;
+    
+}
+
+p span {
+    font-weight: bold;
+}
