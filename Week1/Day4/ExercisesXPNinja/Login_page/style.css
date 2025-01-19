@@ -17,11 +17,13 @@ body {
 }
 
 .login-container {
-    background-image: white;
+    background-color: rgba(166, 0, 255, 0.1);
 }
 
 .welcome-container {
-    background: linear-gradient(to right, #1d1d1d, #7e0aff);
+    /* background: linear-gradient(to right, #1d1d1d, #7e0aff); */
+    background-color: white;
+    /* display: contents; */
 }
 
 h1 {
@@ -43,4 +45,60 @@ h1 {
     gap: 55px; 
     align-items: center;
     margin-left: 165px;
+    margin-top: 20px;
 }
+
+.remember-forgot a {
+    text-decoration: none;
+}
+
+.btn-submit {
+    width: 53%;
+    margin-left: 26.5%;
+    margin-top: 2%;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: #7e0aff;
+    color: white;
+}
+
+.connect {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px; /* Space between text and lines */
+    font-size: 16px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 175px;
+}
+
+.connect::before,
+.connect::after {
+    content: "";
+    flex: 1;  /* Makes the line strech equally */
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 10px; 
+}
+
+
+.fav-icon {
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.copyright {
+    margin-left: 280px;
+    margin-top: 130px;
+}
+
+.fav-icon-welcome {
+    margin-top: 200px;
+    text-align: center;
+}
+
