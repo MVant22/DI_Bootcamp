@@ -21,8 +21,7 @@ body {
 }
 
 .welcome-container {
-    /* background: linear-gradient(to right, #1d1d1d, #7e0aff); */
-    background-color: white;
+    background: linear-gradient(to right, #1d1d1d, #7e0aff);
     /* display: contents; */
 }
 
@@ -94,11 +93,34 @@ h1 {
 
 .copyright {
     margin-left: 280px;
-    margin-top: 130px;
+    margin-top: 110px;
+    font-size: 10px;
 }
 
 .fav-icon-welcome {
     margin-top: 200px;
     text-align: center;
+}
+
+.greetings {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.para {
+    text-align: center;
+    color: white;
+}
+
+.btn-register {
+    margin-left: 255px;
+    padding: 9px;
+    width: 120px;
+    border-radius: 25px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
 }
 
