@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 27px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: red;
+}
+
+.topnav a.split {
+    float: right;
+}
+
+#background_image {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    bottom: 55%;
+    left: 17px;
+    font-size: 50px;
+    color: red;
+}
+
+
+#para {
+    position: absolute;
+    width: 350px;
+    color: purple;
+    font: 50px;
+    bottom: 30%;
+    left: 17px;
+    font-weight: bolder;
+    
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .topnav {
+        background-color: yellow;
+    }
+
+    .topnav a {
+        color: black;
+    }
+
+    h1 {
+        position: absolute;
+        bottom: 65%;
+        left: 17px;
+        font-size: 50px;
+        color: red;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 601px) and (max-width:768px){
+    h1 {
+        font-size: 35px;
+    }
+
+    .topnav {
+        background-color: lightgreen;
+    }
+
+    .topnav a {
+        color: black;
+    }
+}
+
+/* Large devices */
+@media (min-width:769px) and (max-width:992px){
+    .topnav {
+        background-color: red;
+    }
+
+    .topnav a {
+        color: white;
+    }
+
+    h1 {
+        position: absolute;
+        bottom: 38%;
+        left: 420px;
+        font-size: 50px;
+        color: red;
+    }
+}
+
+/* Larger devices */
+@media (min-width:993px) and (max-width:1200px){
+    .topnav {
+        background-color: black;
+    }
+
+    .topnav a {
+        color: white;
+    }
+}
+
+
+
+
