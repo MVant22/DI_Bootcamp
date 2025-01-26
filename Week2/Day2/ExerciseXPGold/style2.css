@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: aqua;
+}
+
+li {
+    display: inline;
+}
+
+.right-part {
+    float: right;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, repeat(2, 2fr);
+}
+
+.title {
+    grid-column: 3 / span 2; 
+}
+
+#drop {
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+#trial1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#trial2{
+    grid-column:3 ;
+    grid-row: 2;
+    margin-top: 51px;
+    
+}
+
+#trial3{
+    grid-column: 4;
+    grid-row: 2;
+    margin-top: 51px;
+}
+
+.trial{
+    text-align: center;
+}
