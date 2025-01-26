@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    background-color: antiquewhite;
+    font-family:'Courier New', Courier, monospace;
+    overflow: hidden;
 }
 
 ul {
@@ -21,15 +24,70 @@ li {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr, repeat(2, 2fr);
+    grid-column-gap: 9px;
 }
 
 .title {
-    grid-column: 3 / span 2; 
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 20px;
+    text-align: center;
+}
+
+#day {
+    font-size: 15px;
+}
+
+#drop {
+    font-size: 10px;
+    color: blue;
+}
+
+#pricing {
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+#power {
+    font-weight: bold;
 }
 
 #drop {
     border: 2px solid blue;
     padding: 5px;
+}
+
+.starter {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.category {
+    font-style: italic;
+    font-size: 9px;
+}
+
+.price {
+    font-size: 25px;
+}
+
+span #month {
+    font-size: 10px;
+}
+
+.trial-link {
+    color: white;
+    background-color: #11ef1f;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.credit {
+    font-style: italic;
+    font-size: 8px;
 }
 
 #trial1 {
@@ -40,24 +98,31 @@ li {
 #trial2{
     grid-column:3 ;
     grid-row: 2;
-    margin-top: 51px;
+    margin-top: 40px;
     
 }
 
 #trial3{
     grid-column: 4;
     grid-row: 2;
-    margin-top: 51px;
+    margin-top: 40px;
 }
 
 .trial{
     text-align: center;
 }
 
+.feat {
+    background-color: #0707fb;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+}
+
 #features1 {
     grid-column: 2;
     grid-row: 3;
-    text-align:left;
+    text-align: left;
 }
 
 #features2 {
@@ -68,4 +133,14 @@ li {
 #features3 {
     grid-column: 4;
     grid-row: 3;
+    
+}
+
+.popular {
+    background-color: rgb(50, 50, 254);
+    color: white;
+}
+
+.trial {
+    background-color: white;
 }
