@@ -1,23 +1,30 @@
 body {
     margin: 0;
     background-color: antiquewhite;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Arial, sans-serif;
     overflow: hidden;
 }
 
-ul {
+#navbar {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: aqua;
+    background-color: white;
 }
 
 li {
-    display: inline;
+    display: inline;   
 }
+
 
 .right-part {
     float: right;
+}
+
+.right-part .btn-signin{
+    padding: 5px;
+    border: 1px solid blue;
+    color: blue;
 }
 
 .container {
@@ -32,10 +39,17 @@ li {
     grid-column-end: 5;
     font-size: 20px;
     text-align: center;
+    
+}
+
+.popular {
+    background-color: rgb(50, 50, 254);
+    color: white;
+    margin-top: 1px;
 }
 
 #day {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #drop {
@@ -80,9 +94,14 @@ span #month {
     color: white;
     background-color: #11ef1f;
     font-size: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 5px;
+}
+
+#trial-sales {
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .credit {
@@ -113,11 +132,32 @@ span #month {
 }
 
 .feat {
-    background-color: #0707fb;
+    background-color: #000069;
     border-radius: 3px;
     color: white;
     font-size: 10px;
+    padding-left: 6px;
 }
+
+.feat h3 {
+    margin-top: 8px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+
+.feat ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feat ul li {
+    padding: 5px 0;
+    font-size: 9px;
+}
+
 
 #features1 {
     grid-column: 2;
@@ -136,10 +176,11 @@ span #month {
     
 }
 
-.popular {
-    background-color: rgb(50, 50, 254);
-    color: white;
+hr {
+    width: 95%;
 }
+
+
 
 .trial {
     background-color: white;
