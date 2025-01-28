@@ -33,3 +33,7 @@
     background-color: black;
     color: white;
 }
+
+.button > .fa-solid {
+    padding-right: 12px;
+}
