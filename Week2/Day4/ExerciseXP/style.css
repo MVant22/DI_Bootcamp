@@ -1,0 +1,31 @@
+.navbar a {
+    margin-left: 15px;
+    font-size: 13px;
+    /* color: white; */
+}
+
+.navbar {
+    font-size: 13px;
+}
+
+.navbar form {
+    margin-left: auto;
+}
+
+.navbar .btn.btn-outline-success.my-2.my-sm-0 {
+    background-color: rgb(59, 245, 22);
+    padding: 3px;
+    color: white;
+    width: 200px;
+    margin-right: 40px;
+    margin-left: 3px;
+}
+
+.navbar .form-control.mr-sm-2 {
+    margin-right: 3px;
+}
+
+.navbar .bg-light {
+    background-color: black;
+    color: white;
+}
