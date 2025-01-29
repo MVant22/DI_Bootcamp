@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url(bg_image.jpg); */
+}
+
+.navbar-brand {
+    padding-left: 250px;
+}
+
+.collapse.navbar-collapse.justify-content-end {
+    padding-right: 130px;
+}
