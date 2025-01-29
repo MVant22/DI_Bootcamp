@@ -1,13 +1,16 @@
-body {
-    margin: 0;
-    padding: 0;
-    /* background-image: url(bg_image.jpg); */
+.up-container {
+    background-image: url(bg_image.jpg);
+    /* background-color: aliceblue; */
 }
 
 .navbar-brand {
     padding-left: 250px;
 }
 
-.collapse.navbar-collapse.justify-content-end {
+.nav{
     padding-right: 130px;
+}
+
+.para {
+    padding-top: 150px;
 }
