@@ -25,6 +25,15 @@
     margin-left: 3px;
 }
 
+.world {
+    margin-top: 15px;
+}
+
+.paragraph {
+    font-weight: lighter;
+    font-size: 1em;
+}
+
 .navbar .form-control.mr-sm-2 {
     margin-right: 3px;
 }
