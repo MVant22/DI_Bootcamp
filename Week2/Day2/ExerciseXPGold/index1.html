@@ -8,71 +8,98 @@
 </head>
 <body>
     
-    <div class="topnav">
+    <nav class="topnav">
         <a class="para"><p>UNBURDEN YOURSELF FROM THW WEIGHT OF EMAIL OVERLOAD! </p></a>
         <button class="btn-learn">LEARN HOW</button>
+    </nav>
+
+    <p class="subtitle-1">Download now</p>
+    
+    <div class="form-group1">
+        <div class="fname form">
+            <label for="first-name">First Name*</label><br>
+            <input type="text" id="first-name" required>
+        </div>
+        
+        <div class="lname form">
+            <label for="last-name">Last Name*</label><br>
+            <input type="text" id="last-name" required>
+        </div>
+
+        <div class="email form">
+            <label for="email">Email(<span class="privacy">privacy policy</span>)*</label><br>
+            <input type="email" id="email" required>
+        </div>
     </div>
 
-    <div class="grid">
-        <h2> DOWNLOAD NOW </h2>
+    <div class="form-group2">
+        <div class="fname form">
+            <label for="phone">Phone Number*</label><br>
+            <input type="text" id="phone" required>
+        </div>
 
-        <div class="fname">
-            <label for="fname">FIRST NAME*</label><br>
-            <input type="text" id="fname" name="fname">
+        <div class="website form">
+            <label for="website">Website URL*</label><br>
+            <input type="url" id="website" required>
         </div>
-        
-        <div class="lname">
-            <label for="lname">LAST NAME*</label><br>
-            <input type="text" id="lname" name="lname">
+
+        <div class="company form">
+            <label for="company">Company Name*</label><br>
+            <input type="text" id="company" required>
         </div>
-        
-        <div class="email">
-            <label for="email">EMAIL<span>(PRIVACY POLICY)</span>*</label><br>
-            <input type="email" id="email" name="email">
-        </div>
-        
-        <div class="phone">
-            <label for="phone">PHONE NUMBER*</label><br>
-            <input type="text" id="phone" name="phone">
-        </div>
-        
-        <div class="website">
-            <label for="website">WEBSITE URL*:</label><br>
-            <input type="text" id="website" name="website">
-        </div>
-        
-        <div class="company">
-            <label for="company">COMPANY NAME*:</label><br>
-            <input type="text" id="company" name="company">
-        </div>
-        
-        <div class="employeeCount">
-            <label for="employeeCount">HOW MANY EMPLOYEES WORK THERE?*</label>
-            <input type="number" id="employee" name="employeeCount" min="0" placeholder="- Please Select -">
-        </div>
-        
-        <div class="service">
-            <label for="service">DOES YOUR COMPANY SELL ANY OF THE FOLLOWING SERVICES:</label>
-            <p>-WEB DESIGN</p>
-            <p>-ONLINE MARKETING</p>
-            <p>-SE0/SEM</p>
-            <p>-ADVERTISING AGENCY SERVICES*</p>
-            <select name="services" id="services">
-                <option value="web">- Please Select -</option>
-                <option value="web">WEB DESIGN</option>
-                <option value="marketing">ONLINE MARKETING</option>
-                <option value="seo">SEO/SEM</option>
-                <option value="ads">ADVERTING AGENCY SERVICES</option>
+    </div>
+
+    <div class="count-employee">
+        <div class="c-employ">
+            <label for="employees">HOW MANY EMPLOYEES WORK THERE?*</label><br>
+            <select id="employees" required style="width: 680px;">
+            <option value="">- Please Select -</option>
+            <option value="1-10">1-10</option>
+            <option value="11-50">11-50</option>
+            <option value="51-200">51-200</option>
+            <option value="200+">200+</option>
+        </select>
+    </div>
+    
+    <div class="category">
+        <div class="sell-category">
+            <label for="services">Does your company sell any of the following services?</label>
+            <ul style="list-style-type:none">
+                <li>WEB DESIGN</li>
+                <li>ONLINE MARKETING</li>
+                <li>SEO/SEM</li>
+                <li>ADVERTISING AGENCY SERVICES</li>
+            </ul>
+            <select id="services" required style="width: 680px;">
+                <option value="">- Please Select -</option>
+                <option value="web-design">Web Design</option>
+                <option value="online-marketing">Online Marketing</option>
+                <option value="seo-sem">SEO/SEM</option>
+                <option value="advertising">Advertising Agency Services</option>
             </select>
         </div>
-        
-        
-        <div class="subs">
-            <input type="checkbox" id="subs" name="subs" value="subs">
-            <label for="subs"> SUBSCRIBE TO HUBSPOT'S MARKETING BLOG</label>
-        </div>
-       
-
     </div>
+
+    
+
+    
+    
+    
+    
+
+    <!-- <div class="checkbox-group">
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe to HubSpot's marketing blog</label>
+    </div> -->
+    
+
+        <!-- 
+        
+        
+        <button type="submit" class="download-btn">DOWNLOAD NOW</button> -->
+        
+    
+
+
 </body>
 </html>
