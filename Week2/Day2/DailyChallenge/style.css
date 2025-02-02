@@ -1,0 +1,31 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four in a row */
+    gap: 20px;
+    justify-content: center;
+}
+
