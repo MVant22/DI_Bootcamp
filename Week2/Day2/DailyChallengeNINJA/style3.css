@@ -1,0 +1,22 @@
+
+.gingham {
+    width: 400px;
+    height: 300px;
+    background:
+    /* Horizontal stripes */
+    repeating-linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0.2),
+    rgba(255, 0, 0, 0.2) 20px,
+    transparent 20px,
+    transparent 40px
+    ),
+    /* Vertical stripes */
+    repeating-linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.2),
+    rgba(255, 0, 0, 0.2) 20px,
+    transparent 20px,
+    transparent 40px
+    );
+}

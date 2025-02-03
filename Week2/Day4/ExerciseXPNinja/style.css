@@ -1,0 +1,22 @@
+body {
+    font-family: Cambria, 'Times New Roman', serif;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    padding-left: 150px;
+}
+
+.job-board {
+    font-size: 12px;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.center-nav {
+    margin-left: 200px;
+}
+
+.nav-left {
+    margin-left: 50px;
+}
