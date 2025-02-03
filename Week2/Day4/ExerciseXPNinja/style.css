@@ -20,3 +20,20 @@ body {
 .nav-left {
     margin-left: 50px;
 }
+
+.content {
+    padding-top: 80px;
+}
+
+.para {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.job-vacancies .num-job {
+    color: greenyellow;
+}
+
+.job-vacancies p {
+    font-size: 12px;
+}
