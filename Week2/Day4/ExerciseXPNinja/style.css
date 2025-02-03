@@ -1,7 +1,8 @@
 body {
     font-family: Cambria, 'Times New Roman', serif;
+    background:url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
-
 .navbar-brand {
     font-size: 20px;
     padding-left: 150px;
@@ -14,7 +15,7 @@ body {
 }
 
 .center-nav {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 .nav-left {
@@ -37,3 +38,41 @@ body {
 .job-vacancies p {
     font-size: 12px;
 }
+
+.search-bar {
+    width: 280px;
+    border: 1px solid black;
+    margin-left: 300px;
+}
+
+.drop {
+    width: 120px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+
+.btnsubmit {
+    width: 120px;
+    border: 1px solid black;
+    margin-left: 15px;
+    background-color: lightgreen;
+    color: white;
+}
+
+.find-job {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.footer-icon {
+    margin-top: 150px;
+    background-color: aquamarine;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
