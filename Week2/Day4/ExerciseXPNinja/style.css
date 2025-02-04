@@ -1,7 +1,7 @@
 body {
     font-family: Cambria, 'Times New Roman', serif;
-    background:url(bg.jpg) no-repeat center center fixed;
-    background-size: cover;
+    /* background:url(bg.jpg) no-repeat center center;
+    background-size: cover; */
 }
 .navbar-brand {
     font-size: 20px;
@@ -26,7 +26,7 @@ body {
     padding-top: 80px;
 }
 
-.para {
+.para-1 {
     font-size: 40px;
     text-transform: capitalize;
 }
@@ -76,3 +76,27 @@ body {
     font-size: 30px;
 }
 
+.para-2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.table {
+    margin-top: 50px;
+}
+
+.logo {
+    font-size: 10px;
+}
+
+.tables-jobvac {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.table {
+    width: 800px;
+    margin-left: 200px;
+}
