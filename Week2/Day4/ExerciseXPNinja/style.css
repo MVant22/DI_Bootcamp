@@ -100,3 +100,13 @@ body {
     width: 800px;
     margin-left: 200px;
 }
+
+.footer {
+    background-color: antiquewhite;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.horizontal {
+    width: 60px;
+}
