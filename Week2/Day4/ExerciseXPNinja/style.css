@@ -105,8 +105,21 @@ body {
     background-color: antiquewhite;
     padding-top: 50px;
     font-size: 30px;
+    margin-top: 80px;
 }
 
-.horizontal {
-    width: 60px;
+.para-footer {
+    font-size: 15px;
+}
+
+.table-light {
+    margin-top: 60px;
+}
+
+.ficon {
+    font-size: 20px;
+}
+
+.footer-table-subtilte {
+    font-size: 20px;
 }
