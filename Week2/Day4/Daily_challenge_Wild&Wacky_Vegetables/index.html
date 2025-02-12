@@ -9,35 +9,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col-4">
-            <div class="left-container bg-light mt-3 pb-4">
-              <p>Some Favorites</p>
-              <ul>
-                <li>Celery Root</li>
-                <li>Spaghetti Squash</li>
-                <li>Killer Mushrooms</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-8">
-            <div class="right-container mt-3">
-              <h3>Wild & Wacky Vegetables</h3>
-              <p>Kale, courgette, salsify, mustard, and broccoli blend with seakale, wakame, potato, 
-                fava bean, and tiger nut. Leek, celery, spinach, avocado, cabbage, celtuce, rutabaga, 
-                and kohlrabi create a rich medley. Parsnip, pea, soko, groundnut, and bitterleaf accompany 
-                spring onion. 
-              </p>
-                <p>Mung bean, quandong, kale, prairie turnip, celery, gram, zucchini, and pumpkin mix with 
-                  green bean, silver beet, chard, endive, komatsuna, eggplant, kakadu plum, radish, and broccoli. 
-                  Arugula, amaranth, fennel, wakame, peanut, and garlic enhance the blend. Sorrel, jicama, 
-                  quandong, kale, chickpea, water chestnut, rock melon, and aubergine complement lettuce, pea, 
-                  azuki bean, cress, onion, sea lettuce, dandelion, nori, and dulse rutabaga.
-                </p>
-            </div>
-          </div>
+    
+  <div class="row align-items-start">
+    <div class="col-3">
+      <div class="left-container bg-light mt-3 pb-4 border">
+        <ul class="list-group-flush pt-2">
+          <p class="sub-fav">Some Favorites</p>
+          <li class="list-group-item">Celery Root</li>
+          <li class="list-group-item">Spaghetti Squash</li>
+          <li class="list-group-item">Killer Mushrooms</li>
+        </ul>
+
+        <div class="col">
+          <input type="text" class="form-control" id="search" aria-describedby="text">
         </div>
+        
+        <button type="button" class="btn btn-primary">Search Recipes</button>
+        
+      </div>
     </div>
+    <div class="col-9">
+      <div class="right-container text-start mt-3">
+        <h3 class="fw-bolder">Wild & Wacky Vegetables</h3>
+        <p>The beet is the most intense of vegetables. The radish, admittedly, is more feverish, but 
+          the fire of the raddis is a cold fire, the fire of discontent not of passion. Tomatoes are lusty
+          enough, yet there runs through tomatoes an undercurrent of frivolity. Beets are deadly serious.<br>
+          <span class="text-secondary">- Tom Robbins</span>
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Veggie</th>
+            <th>Disease</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-light">Beets</td>
+            <td class="table-light">Beeturia</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Carrots</td>
+            <td>Carotenosis</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="right-container text-start mt-3">
+        <h3 class="fw-bolder">Really informative info</h3>
+        <p>Kale, courgette, salsify, mustard, and broccoli blend with seakale, wakame, potato, 
+          fava bean, and tiger nut. Leek, celery, spinach, avocado, cabbage, celtuce, rutabaga, 
+          and kohlrabi create a rich medley. Parsnip, pea, soko, groundnut, and bitterleaf accompany 
+          spring onion. 
+        </p>
+        <p>Mung bean, quandong, kale, prairie turnip, celery, gram, zucchini, and pumpkin mix with 
+          green bean, silver beet, chard, endive, komatsuna, eggplant, kakadu plum, radish, and broccoli. 
+          Arugula, amaranth, fennel, wakame, peanut, and garlic enhance the blend. Sorrel, jicama, 
+          quandong, kale, chickpea, water chestnut, rock melon, and aubergine complement lettuce, pea, 
+          azuki bean, cress, onion, sea lettuce, dandelion, nori, and dulse rutabaga.and garlic enhance the blend. Sorrel, jicama, 
+          quandong, kale, chickpea, water chestnut, rock melon, and aubergine complement lettuce, pea,
+        </p>
+      </div>
+    </div>
+
+  </div>
+    
 </body>
 </html>
