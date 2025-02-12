@@ -9,6 +9,7 @@ body {
     color: gray;
 }
 
-/* .artist {
-    color: grey;
-} */
+.custom-hr {
+    width: 50%;
+    margin-left: 10%; 
+  }
