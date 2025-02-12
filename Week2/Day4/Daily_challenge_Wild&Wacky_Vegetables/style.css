@@ -6,6 +6,7 @@ body {
 
 .sub-fav {
     font-weight: bold;
+    color: gray;
 }
 
 /* .artist {
