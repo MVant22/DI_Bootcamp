@@ -9,7 +9,11 @@ body {
     color: gray;
 }
 
+.custom-bullet {
+    list-style-type: square; 
+}
+
 .custom-hr {
     width: 50%;
     margin-left: 10%; 
-  }
+}
