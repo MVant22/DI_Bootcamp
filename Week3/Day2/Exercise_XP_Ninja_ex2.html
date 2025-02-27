@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Exercise 2 
+
+        let userInput = prompt("Enter numbers separated by commas (e.g., 1,2,3,4):");
+
+        let numbersArray = userInput.split(",").map(Number);
+
+        let sum = numbersArray.reduce((acc, num) => acc + num, 0);
+
+        console.log("The sum of the numbers is:", sum);
+
+    </script>
+</body>
+</html>
