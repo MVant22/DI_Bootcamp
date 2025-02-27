@@ -39,5 +39,5 @@ else if (users.length === 2) {
     console.log(`${users[0]} and ${users[1]} are online`);
 }
 else {
-    console.log(`${users[0]} and ${users.length - 1} more are online`)
+    console.log(`${users[0]}, ${users[1]} and ${users.length - 2} more are online`)
 }
