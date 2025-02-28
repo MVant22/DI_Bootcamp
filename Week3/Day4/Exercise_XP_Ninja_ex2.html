@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zip codes</title>
 </head>
 <body>
     <script>
         let zip = prompt("Enter a ZIP code:");
 
-        if (zip.length === 5 && !isNaN(zip) && zip.trim() === zip) {
+        // Without regular expressions
+        //if (zip.length === 5 && !isNaN(zip) && zip.trim() === zip) {
+           // console.log("Valid ZIP code");
+        //} 
+        //else {
+            //console.log("Invalid ZIP code");
+        //} 
+
+        // with regular expressions
+        if (/^\d{5}$/.test(zip)) {
             console.log("Valid ZIP code");
-        } 
-        else {
+        } else {
             console.log("Invalid ZIP code");
         }
     </script>

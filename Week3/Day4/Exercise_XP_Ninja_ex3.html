@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret word</title>
+</head>
+<body>
+    <script>
+        
+        // Need to look this code again
+
+        let word = prompt("Enter a word:");
+
+        
+        let noVowels = word.replace(/[aeiouAEIOU]/g, '');
+        console.log("Word without vowels:", noVowels);
+
+        
+        let replacedVowels = word.replace(/[aAEeIioOuU]/g, function(match) {
+            switch(match.toLowerCase()) {
+                case 'a': return '1';
+                case 'e': return '2';
+                case 'i': return '3';
+                case 'o': return '4';
+                case 'u': return '5';
+                default: return match;
+            }
+        });
+        console.log("Word with vowels replaced:", replacedVowels);
+
+    </script>
+    
+</body>
+</html>
