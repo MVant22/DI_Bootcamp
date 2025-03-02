@@ -22,7 +22,18 @@ console.log(people);
 console.log(last);
 
 
-for (let i=0; i < people.length; i++){
-    console.log( i + " " + people[i])
-}
+// for (let i=0; i < people.length; i++){
+//     console.log( i + " " + people[i])
+// }
 
+
+for (let i=0; i < people.length; i++){
+    if (i == 2){
+        console.log(1 + " " + people[i]);
+        break;
+    }
+    else {
+        console.log( i + " " + people[i])
+    }
+    
+}
