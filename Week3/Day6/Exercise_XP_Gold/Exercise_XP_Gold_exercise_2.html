@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let guestList = {
+        randy: "Germany",
+        karla: "France",
+        wendy: "Japan",
+        norman: "England",
+        sam: "Argentina"
+    }
+    
+    let student = prompt("Enter your name");
+    
+    // for (let key in guestList){
+    //     console.log(key);
+    // }
+    
+    if (student.toLowerCase() in guestList){
+        console.log(`Hi! i'm ${student}, and I'm from ${guestList[student.toLowerCase()]}`);
+    }else {
+        console.log("Hi! i'm a guest")
+    }
+</script>
+</html>
