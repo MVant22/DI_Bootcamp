@@ -10,6 +10,5 @@ for (let i=0; i<age.length; i++){
     }
 }
 
-
 console.log(`The sum is ${sum}`);
 console.log(`The highest number is ${highest}`);
