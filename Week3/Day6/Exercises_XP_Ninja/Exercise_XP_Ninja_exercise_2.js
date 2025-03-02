@@ -18,9 +18,9 @@ function checkPassOrFail(average) {
   
   
 function findAvg(gradesList) {
-const average = calculateAverage(gradesList); 
-console.log("Average grade: " + average.toFixed(2)); 
-checkPassOrFail(average); 
+    const average = calculateAverage(gradesList); 
+    console.log("Average grade: " + average.toFixed(2)); 
+    checkPassOrFail(average); 
 }
   
 
