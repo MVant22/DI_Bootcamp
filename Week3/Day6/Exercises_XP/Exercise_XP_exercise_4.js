@@ -14,14 +14,14 @@ const building = {
     },
 }
 
-// console.log(building["numberOfFloors"]);
+console.log(building["numberOfFloors"]);
 
-// console.log(
-//     building["numberOfAptByFloor"]["firstFloor"],
-//     building["numberOfAptByFloor"]["thirdFloor"] 
-// );
+console.log(
+    building["numberOfAptByFloor"]["firstFloor"],
+    building["numberOfAptByFloor"]["thirdFloor"] 
+);
 
-// console.log(building["numberOfRoomsAndRent"].dan[0]);
+console.log(building["numberOfRoomsAndRent"].dan[0]);
 
 
 if ((building["numberOfRoomsAndRent"].sarah[1] + building["numberOfRoomsAndRent"].david[1]) > 
