@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Costs</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function hotelCost(price) {
+
+        let numNights = parseInt(prompt("Enter number of nights to stay: "));
+
+        while (isNaN(numNights || numNights <=0)){
+            numNights = parseInt(prompt("Enter number of nights to stay: "));
+        }
+
+        let totalCost = numNights * price;
+        return totalCost;
+
+    }
+
+    function planeRideCost(){
+        let destination = prompt("Enter your destination: ");
+
+        while (!destination || typeof destination !== 'string') {
+            destination = prompt("Please enter a valid destination:");
+        }
+
+        if(destination.toLowerCase() === 'london') {
+            return 183;
+        }
+        else if(destination.toLowerCase() === 'paris') {
+            return 220;
+        }
+        else {
+            return 300;
+        }
+    }
+
+    function rentalCarCost(rentalPerDay) {
+        let rentalDay = parseInt(prompt("Enter number of days for rental: "));
+
+        while (isNaN(rentalDay || rentalDay <=0)){
+            rentalDay = parseInt(prompt("Enter number of days for rental: "));
+        };
+
+        if (rentalDay > 10) {
+            return (rentalDay * rentalPerDay) - ((5/100) * (rentalPerDay * rentalPerDay));
+        }else{
+            return rentalDay * rentalPerDay; 
+        };
+    };
+
+
+    function totalVacationCost() {
+
+        let rentalPerDay = 40;
+        let pricePerNight = 140;
+
+        let totalHotelPrice = hotelCost(pricePerNight);
+        let totalPlanePrice = planeRideCost();
+        let totalCarCost = rentalCarCost(rentalPerDay);
+
+        console.log(`
+        The car cost $: ${totalCarCost}, 
+        the hotel cost $: ${totalHotelPrice}, 
+        the plane tickets cost $: ${totalPlanePrice}`);
+    };
+    
+    //console.log("Total hotel cost: $" + total)
+    //console.log("The price of your flight is: $" + price)
+    //console.log(`The total cost for rental is ${totalCostRental}`)
+
+    totalVacationCost();
+
+
+</script>
+</html>
