@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 Tips</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function calculateTip(){
+
+        let bill = prompt("Enter your bill`s amount");
+        bill = parseFloat(bill);
+
+        let tip;
+
+        if (bill < 50){
+            tip = 0.2 * bill;
+        }
+        else if (bill >=50 && bill <= 200){
+            tip = 0.15 * bill;
+        }
+        else{
+            tip = 0.1 * bill;
+        }
+
+        let total_bill = bill + tip;
+
+        console.log(`The total amount is ${total_bill.toFixed(2)}`);
+        
+    }
+
+    calculateTip();
+</script>
+</html>
