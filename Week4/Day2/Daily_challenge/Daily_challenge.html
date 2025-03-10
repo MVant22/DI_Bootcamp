@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily challenge </title>
+</head>
+<body>
+    
+</body>
+<script>
+    function getWords() {
+        // Prompt user for words and convert them into an array
+        let input = prompt("Enter words separated by commas:");
+        return input.split(",").map(word => word.trim());
+    }
+    
+    function findMaxLength(words) {
+        // Find the longest word length using map and reduce
+        return words.reduce((max, word) => Math.max(max, word.length), 0);
+    }
+    
+    function createBorder(length) {
+        // Create a border of '*' with appropriate width
+        return "*".repeat(length + 4);
+    }
+    
+    function displayWords(words, maxLength) {
+        // Print each word in the frame with padding
+        words.forEach(word => {
+            console.log(`* ${word.padEnd(maxLength)} *`);
+        });
+    }
+    
+    function printWordsInFrame() {
+        let words = getWords();
+        let maxLength = findMaxLength(words);
+        let border = createBorder(maxLength);
+    
+        console.log(border);
+        displayWords(words, maxLength);
+        console.log(border);
+    }
+    
+    // Call the function
+    printWordsInFrame();
+    
+</script>
+</html>
