@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div>Users:</div>
+    <ul>
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+</body>
+
+<script>
+    //let color = document.querySelector('div').style.cssText = 'background-color: lightblue; padding:10px;';
+
+    //let hide = document.querySelector('ul li');
+    //if (hide.innerHTML.trim() === 'John') {
+      // hide.style.display = 'none';
+    //}
+
+   //let bord = document.querySelectorAll('ul li')[1];
+   // bord.style.cssText = 'border: 2px solid black';
+
+    //let change = document.querySelector('body');
+    //change.style.cssText = 'font-size: 25px';
+
+    document.querySelector('div').style.cssText = 'background-color: lightblue; padding: 10px';
+
+    let users = document.querySelectorAll('ul li');
+
+    if (document.querySelector('div').style.backgroundColor === 'lightblue') {
+        // Extract user names from the <li> elements
+        let userNames = Array.from(users).map(user => user.textContent);
+        
+        // Alert the names (assuming there are two users)
+        alert(`Hello ${userNames[0]} and ${userNames[1]}`);
+    }
+
+
+</script>
+</html>

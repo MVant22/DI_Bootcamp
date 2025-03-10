@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>David</li>
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+    
+</body>
+
+<script>
+    //let div = document.getElementById("container");
+    //console.log(div);
+
+    //let change = document.querySelectorAll('.list li')[1].innerHTML = 'Richard';
+    //console.log(change);
+
+    //let secondlist = document.querySelectorAll('.list')[1];
+    //let secondlists = secondlist.querySelectorAll('li')[1];
+    //secondlists.remove();
+
+    //let lists = document.querySelectorAll('.list');
+   
+    //for (let i = 0; i < lists.length; i++){
+       // let firstItem = lists[i].querySelector('li');
+       // if (firstItem) {
+        //    firstItem.innerHTML = 'Mesonne';
+        //}
+    //}
+
+    let lists = document.querySelectorAll('.list');
+
+    lists.forEach(list => {
+        list.classList.add('student_list');
+    });
+
+    lists[0].classList.add('university', 'attendance');
+
+</script>
+</html>
