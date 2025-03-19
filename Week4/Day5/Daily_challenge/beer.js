@@ -8,7 +8,7 @@ function countdown(num){
                 we have now ${num-i} bottles`);
         }else if (i == 1){
             console.log(`Take ${i} down, pass it around
-                we have now ${num-i} bottle`);
+                we have now ${num-i} bottles`);
         }
     }
     console.log(`${num-num} bottle of beer on the wall`);

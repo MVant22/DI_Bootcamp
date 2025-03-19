@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise XP</title>
+</head>
+<body>
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+
+        <!-- <button id="submit" onclick="changeAll()">button</button> -->
+    </article>
+</body>
+<script>
+    // Part 1 - retrieve h1
+    //let x = document.querySelector("h1").innerHTML;
+    //console.log(x);
+
+    //Part 2 - remove last paragraph in article tag
+    //const element = document.querySelector("article");
+    //let last = element.lastElementChild.remove();
+    //console.log(last);
+
+    //Part 3 - ad event listener to change background color h2
+    //let change = document.querySelector("h2")
+
+    //change.addEventListener("click", changeBackground);
+
+    //function changeBackground(){
+        //change.style.backgroundColor = "red";
+    //}
+
+    //Part 4
+    //let change = document.querySelector("h3");
+
+    //change.addEventListener("click", hide);
+
+    //function hide(){
+        //change.style.display = 'none';
+    //}
+
+    // Part 5 click on button, change all paragraph
+
+    //function changeAll(){
+        //const paragraphs = document.querySelectorAll("article p");
+        //for (let i = 0; i < paragraphs.length; i++) {
+            //paragraphs[i].style.fontWeight = "bold";
+        //}
+    //}
+
+    //Part 6
+    //let x = document.querySelector("h1")
+    //let i = Math.floor(Math.random() * 101)
+
+    //x.addEventListener("mouseover", RespondMouseOver)
+
+    //function RespondMouseOver() { 
+       // x.style.fontSize = i + "px";
+    // } 
+
+    // Part 7 hover - 2n para fade out
+    let x = document.querySelectorAll("article p")[1];
+
+    x.addEventListener("mouseover", RespondFadeOut);
+    x.addEventListener("mouseout", RespondFadeIn)
+
+    function RespondFadeOut(){
+        x.style.opacity = 0;
+    }
+
+    function RespondFadeIn(){
+        x.style.opacity = 1;
+    }
+   
+    
+
+</script>
+</html>
