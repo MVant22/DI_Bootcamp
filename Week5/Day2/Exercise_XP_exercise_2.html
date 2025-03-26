@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise XP exercise 2</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="firstname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lastname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+      <ul class="usersAnswer"></ul>
+</body>
+<script>
+    // Part 1
+    //let x = document.querySelector("form")
+    //console.log(x);
+
+    // Part 2
+    //let x = document.getElementById("submit");
+    
+    //addEventListener("click", function() {
+    
+        //const firstName = document.getElementById("fname").value;
+        //const lastName = document.getElementById("lname").value;
+    
+        //console.log("First Name:", firstName);
+        //console.log("Last Name:", lastName);
+    //});
+
+    //Part 3
+    //let x = document.getElementById('submit');
+
+    //x.addEventListener("click", submit);
+
+    //function submit(){
+        //const firstName = document.getElementsByName("firstname")[0].value;
+        //const lastName = document.getElementsByName("lastname")[0].value;
+
+        //console.log("First Name:", firstName);
+        //console.log("Last Name:", lastName);
+    //}
+
+    //Part 4
+
+    const form = document.querySelector("form");
+
+    function logFormInputs(e){
+       
+        const firstName = document.getElementById("fname").value;
+        const lastName = document.getElementById("lname").value;
+        console.log(firstName, lastName);
+        if (firstName == "" || lastName == ""){
+            alert("Please fill all the fill")
+        }else {
+            const ul = document.querySelector(".usersAnswer");
+            ul.innerHTML = "";
+            const firstLi = document.createElement("li");
+            const secondLi = document.createElement("li");
+            firstLI.innerText = firstName;
+            secondLi.innerText = lastName;
+            ul.append(firstLi, secondLi);
+        }
+    }
+    
+    form.addEventListener("submit", logFormInputs)
+    
+
+</script>
+</html>
