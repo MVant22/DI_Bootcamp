@@ -1,46 +1,44 @@
 
-let shoppingList = []; // Empty shopping list
+let shoppingList = []; 
 
 const root = document.getElementById("root");
-root.innerHTML = ""; // Clear root content
+root.innerHTML = ""; 
 
-// Create input field
+
 let text = document.createElement("input");
 text.type = "text";
 text.placeholder = "Enter item...";
 
-// Create 'Add Item' button
+
 let addItemBtn = document.createElement("button");
 addItemBtn.textContent = "Add Item";
 
-// Create 'Clear All' button
+
 let clearAllBtn = document.createElement("button");
 clearAllBtn.textContent = "Clear All";
 
-// Create a list container
+
 let listContainer = document.createElement("ul");
 
-// Append elements to the root
+
 root.append(text, addItemBtn, clearAllBtn, listContainer);
 
-// Function to add an item
 function addItem() {
-    let item = text.value.trim(); // Get text input and remove whitespace
+    let item = text.value.trim(); 
     if (item) {
-        shoppingList.push(item); // Add to array
-        text.value = ""; // Clear input field
-        displayList(); // Update the list display
+        shoppingList.push(item); 
+        text.value = ""; 
+        displayList(); 
     }
 }
 
-// Function to display the shopping list
 function displayList() {
-    listContainer.innerHTML = ""; // Clear previous list items
+    listContainer.innerHTML = ""; 
     shoppingList.forEach((item, index) => {
         let listItem = document.createElement("li");
         listItem.textContent = item;
 
-        // Create a remove button for each item
+        
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "remove";
         removeBtn.onclick = () => removeItem(index);
@@ -50,19 +48,16 @@ function displayList() {
     });
 }
 
-// Function to remove a specific item
 function removeItem(index) {
-    shoppingList.splice(index, 1); // Remove item from array
-    displayList(); // Refresh the list
+    shoppingList.splice(index, 1); 
+    displayList(); 
 }
 
-// Function to clear all items
 function clearAll() {
-    shoppingList = []; // Empty the array
-    displayList(); // Update the list
+    shoppingList = []; 
+    displayList(); 
 }
 
-// Event Listeners
 addItemBtn.addEventListener("click", addItem);
 clearAllBtn.addEventListener("click", clearAll);
 
