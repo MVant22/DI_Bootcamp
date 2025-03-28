@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Ninja 2</title>
+</head>
+<body>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+    <button type="button" id="button">Click Me!</button>
+</body>
+<script>
+    
+    let butSub = document.getElementById("button");
+    butSub.addEventListener("click", validate);
+
+    // with Regex
+    //function validate(){
+        //let mail = document.querySelector("input[type='email']").value.trim();
+        //let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        //if (regex.test(mail)){
+            //console.log("valid email address");
+        //}else{
+            //console.log("invalid email address");
+        //}
+    //}
+
+    function validate(){
+        let mail = document.querySelector("input[type='email']").value.trim();
+
+        if (!mail.includes("@") || !mail.includes(".")){
+            console.log("Invalid email address");
+            return;
+        }
+    
+
+        let atIndex = mail.indexOf("@");
+        let dotIndex = mail.lastIndexOf(".")
+
+        if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex === mail.length - 1){
+            console.log("Invalid email address");
+        }else{
+            console.log("Valid email address");
+        }
+    }
+    
+</script>
+</html>
