@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge Letters</title>
+</head>
+<body>
+    <h2>Only Letters Allowed</h2>
+    <input type="text" id="text" name="text"><br>
+    <input type="submit" id="submit" name="submit" value="Submit" onclick="onlyLetter()">
+</body>
+<script>
+    var x = document.getElementById("text");
+    let submit = document.getElementById("submit").addEventListener("input", onlyLetter)
+
+    function onlyLetter(){
+        var letters = /^[A-Za-z]+$/;
+        if (x.value.match(letters)){
+            alert(`Your input has accepted`);
+            return true;
+        }
+        else{
+            alert(`Please enter only letters`);
+            return false;
+        }
+    }
+
+    
+    
+
+</script>
+</html>
