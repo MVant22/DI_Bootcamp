@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 300px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: navy;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="addBox">Add Box</button>
+    <div id="container"></div>
+
+    <script>
+        document.getElementById("addBox").addEventListener("click", () => {
+            const box = document.createElement("div");
+            box.classList.add("box");
+
+            // Random color generation
+            const randomColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+            box.style.backgroundColor = randomColor;
+
+            document.getElementById("container").appendChild(box);
+        });
+    </script>
+
+</body>
+</html>

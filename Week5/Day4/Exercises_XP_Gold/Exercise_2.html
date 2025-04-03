@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Animation</title>
+    <title>Draggable Paragraph with Font Size Change</title>
     <style>
         body {
             display: flex;
@@ -11,44 +11,55 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
-            flex-direction: column;
+            overflow: hidden;
         }
 
-        .loader {
-            width: 50px;
-            height: 50px;
-            border: 5px solid lightgray;
-            border-top: 5px solid blue;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        #loading-text {
-            margin-top: 10px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .hidden {
-            display: none;
+        #draggableParagraph {
+            position: absolute;
+            padding: 10px;
+            background: lightblue;
+            border: 2px solid navy;
+            cursor: grab;
+            font-size: 16px;
+            user-select: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="loader" id="loader"></div>
-    <p id="loading-text">Loading...</p>
+    <p id="draggableParagraph">Drag me around! My font size changes with my position.</p>
 
     <script>
-        setTimeout(() => {
-            document.getElementById("loader").classList.add("hidden");
-            document.getElementById("loading-text").classList.add("hidden");
-        }, 3000);
+        const paragraph = document.getElementById("draggableParagraph");
+
+        let offsetX, offsetY, isDragging = false;
+
+        paragraph.addEventListener("mousedown", (event) => {
+            isDragging = true;
+            offsetX = event.clientX - paragraph.offsetLeft;
+            offsetY = event.clientY - paragraph.offsetTop;
+            paragraph.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (event) => {
+            if (isDragging) {
+                const x = event.clientX;
+                const y = event.clientY;
+                
+                // Move paragraph
+                paragraph.style.left = `${x - offsetX}px`;
+                paragraph.style.top = `${y - offsetY}px`;
+
+                // Change font size based on Y coordinate
+                const newFontSize = Math.max(16, y / 20); // Adjust font size based on screen position
+                paragraph.style.fontSize = `${newFontSize}px`;
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            paragraph.style.cursor = "grab";
+        });
     </script>
 
 </body>
