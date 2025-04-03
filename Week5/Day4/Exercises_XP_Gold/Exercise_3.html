@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .bubble {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(173, 216, 230, 0.7);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: floatUp 2s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) scale(2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.addEventListener("mousemove", (event) => {
+        const bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+
+        // Position bubble at mouse coordinates
+        bubble.style.left = `${event.clientX}px`;
+        bubble.style.top = `${event.clientY}px`;
+
+        // Random size and color
+        const size = Math.random() * 20 + 10; // 10px to 30px
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        bubble.style.backgroundColor = `hsla(${Math.random() * 360}, 100%, 70%, 0.8)`;
+
+        document.body.appendChild(bubble);
+
+        // Remove bubble after animation
+        setTimeout(() => {
+            bubble.remove();
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>
