@@ -1,4 +1,4 @@
-function winBattle(battle) {
+const winBattle = (battle) => {
 
     let experiencePoints;
     
