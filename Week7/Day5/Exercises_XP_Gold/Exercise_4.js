@@ -6,4 +6,4 @@ function repeat(str, n = 1){
     return result;
 }
 
-console.log(repeat("Hi", 3))
+console.log(repeat("Hi", 3));
