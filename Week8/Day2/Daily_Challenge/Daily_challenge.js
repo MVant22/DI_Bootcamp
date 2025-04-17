@@ -26,4 +26,4 @@ let cloneGroceries = () => {
 
 const result = cloneGroceries();
 
-console.log(result)
+console.log(result);
