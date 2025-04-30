@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+</head>
+<body>
+    <section id="quote-section">
+        <!--Quote will be generated -->
+    </section>
+
+    <button id="generate-quote">Generate Quote</button>
+
+    <div id="extra-buttons" style="margin-top: 20px;">
+        <button id="count-chars-spaces">Characters (with spaces)</button>
+        <button id="count-chars-no-spaces">Characters (without spaces)</button>
+        <button id="count-words">Count Words</button>
+        <button id="like-quote">Like ❤️</button>
+      </div>
+    
+      <p id="info-output" style="font-weight: bold;"></p>
+    
+    <hr>
+
+    <h2>Add a New Quote</h2>
+    <form id="quote-form">
+        <input type="text" id="new-quote" placeholder="Enter quote" required>
+        <input type="text" id="new-author" placeholder="Enter author" required>
+        <button type="submit">Add Quote</button>
+    </form>
+
+
+    <script src="Random_Quote_Generator.js"></script>
+</body>
+</html>
