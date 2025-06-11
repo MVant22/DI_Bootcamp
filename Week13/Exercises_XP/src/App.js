@@ -1,16 +1,22 @@
 import logo from './logo.svg';
+import React from 'react';
+import UserFavoriteAnimals from './UserFavoriteAnimals';
 import './App.css';
 
-const myelement = <h1>I Love JSX!</h1>
-const sum = <div>React is {5 + 5} time better</div>
+const user = {
+  firstName: 'Bob',
+  lastName: 'Dylan',
+  favAnimals : ['Horse','Turtle','Elephant','Monkey']
+};
 
 function App() {
   return (
     <div>
-      <p>Hello World!</p>
-      {myelement}
-      {sum}
+      <h3>First Name: {user.firstName}</h3>
+      <h3>First Name: {user.lastName}</h3>
+      <UserFavoriteAnimals favAnimals={user.favAnimals}/>
     </div>
+    
   );
 }
 
