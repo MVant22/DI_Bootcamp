@@ -1,4 +1,5 @@
 import React , {Component} from 'react';
+import './Exercise.css';
 
 class Exercise extends Component {
     render(){
@@ -13,7 +14,7 @@ class Exercise extends Component {
             <div>
                 <h1 style={style_header}>This a Header</h1>
 
-                <p>This is a paragraph</p>
+                <p className='para'>This is a paragraph</p>
 
                 <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Visit React Official Website
@@ -21,7 +22,7 @@ class Exercise extends Component {
 
                 <h3>This is a Form:</h3>
 
-                <p>Enter your name</p>
+                <p className='para'>Enter your name</p>
 
                 <form>
                     <label>
