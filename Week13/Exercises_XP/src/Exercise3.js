@@ -2,14 +2,16 @@ import React , {Component} from 'react';
 
 class Exercise extends Component {
     render(){
-        const headingStyle = {
-            color: 'red',
-            padding: '10px'
-        };
+        const style_header = {
+            color: "white",
+            backgroundColor: "DodgerBlue",
+            padding: "10px",
+            fontFamily: "Arial"
+};
 
         return (
             <div>
-                <h1 style={headingStyle}>This a Header</h1>
+                <h1 style={style_header}>This a Header</h1>
 
                 <p>This is a paragraph</p>
 
